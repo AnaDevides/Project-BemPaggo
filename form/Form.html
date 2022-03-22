@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pacote de adesivos</title>
+    <link rel="stylesheet" type="text/css" href="Form.css">
+    <script type="text/javascript" src="Form.js"></script>
+</head>
+
+<body>
+
+
+
+    <!--titulo -->
+    <div class="backgrd">
+        <label2> Formulário <br> para compra de <br> <b>Pacote de adesivos</b>  
+        <div class="box">
+        <img src="box.png" alt="some text" width=150 height=125> </div></label2> 
+        
+        <br>
+        
+        <!--selecao de adesivos -->
+        <div class="container">
+
+            <form id="Pacote de adesivos" method="get" action="Pacote_de_adesivos.php">
+                <label><b>Quais adesivos:</b><br>
+                    <input type="checkbox" id="check">
+                    <span>React</span><br>
+                    <input type="checkbox" id="check">
+                    <span>Vue</span><br>
+                    <input type="checkbox" id="check">
+                    <span>Angular</span><br>
+                </label><br>
+
+                <!--quntidade de adesivos -->
+                <label><b>Quantos adesivos de cada?</b> <br>
+                    <input type="number" name="Uname" id="Uname"><br></b>
+                </label><br>
+
+                <!--observacoes -->
+                <label><b>Observações: </b><br>
+                    <textarea name="obs" id="obs" placeholder="alguma duvida, critica ou sugestão?"></textarea>
+                </label><br>
+
+            </form>
+        </div>
+        <!--enviar-->
+        <div class="bt-right">
+            <br>
+
+            <input type="submit" name="enviar" id="botao" onclick="Enviar()" value="ENVIAR" />
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>
